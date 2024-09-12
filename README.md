@@ -1,8 +1,8 @@
-# Frontend Challenge Fall '22
+# Frontend Challenge Fall '24
 
 Welcome to the Penn Labs Frontend Challenge!
 
-If you have already done this challenge, there's a [section below](https://www.notion.so/Frontend-Challenge-Fall-22-d6c03559ee1d4f1f9f56aa6836b7caba) for you. 
+If you have already done this challenge, there's a [section below](https://pennlabs.notion.site/0d81270614be4947b7a36e2b2195d737?pvs=25#b23b8785be0141fdb97d6c556ec7bea2) for you. 
 
 In this challenge, you will be building a product called Penn Course Cart in React! The goal of this challenge is for you to demonstrate:
 
@@ -14,14 +14,14 @@ More concretely, you will build an interface where users can explore computer sc
 
 ## Getting Started
 
-1. Copy this [repository](https://github.com/pennlabs/frontend-challenge) to your own GitHub account by clicking the green "use this template" button. You will have to make a Github account if you don't already have one. **Be sure to create a private repository.** **You will be submitting a ZIP file at the end of the technical.**
+1. Copy this [repository](https://github.com/pennlabs/frontend-challenge-f24) to your own GitHub account by clicking the green "use this template" button. You will have to make a Github account if you don't already have one. **Be sure to create a private repository.** **You will be submitting a ZIP file at the end of the technical.**
 2. [Clone](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository) the repository you just made to your own computer. 
 
 ```bash
-git clone https://github.com/pennlabs/frontend-challenge-f22.git
+git clone https://github.com/pennlabs/frontend-challenge-f24.git
 ```
 
-3. Make sure you have [Node](https://www.seas.upenn.edu/~cis197/development) installed.
+3. Make sure you have [Node](https://nodejs.org) installed.
 
 4. Navigate to the cloned directory in the command line and run `yarn` or `npm install`
 
