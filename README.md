@@ -23,19 +23,18 @@ git clone https://github.com/pennlabs/frontend-challenge-f24.git
 
 3. Make sure you have [Node](https://nodejs.org) installed.
 
-4. Navigate to the cloned directory in the command line and run `yarn` or `npm install`
+4. Navigate to the cloned directory in the command line and run `npm install`
 
-5. Run `yarn start` or `npm start`
+5. Run `npm dev`
 
-**Note:** This project is bootstrapped with [Create React App (CRA)](https://github.com/facebook/create-react-app) using [Typescript](https://www.typescriptlang.org/), so hot-reloading has been configured. This means after you run `yarn start` or `npm start`, the application will be recompiled automatically after a file is edited.
+**Note:** This project is bootstrapped with [Vite](https://vitejs.dev) using [Typescript](https://www.typescriptlang.org/), so hot-reloading has been configured. This means after you run `npm dev`, the application will be recompiled automatically after a file is edited.
 
 ## General Structure
 
 We have provided minimal starter code with the following structure. 
 
 ```
-public/
-  index.html           Root HTML file for each page
+index.html           Root HTML file for each page
 
 src/                   Where the JS logic is
   components/          Contains all React components
@@ -47,7 +46,6 @@ src/                   Where the JS logic is
   data/                Contains data rendered by the components
     courses.json       Contains information on CIS courses at Penn
 
-  App.css              CSS for the app
   App.tsx              Root component for the app
   index.tsx            Renders the React app
   ...
@@ -59,7 +57,7 @@ Your application should implement the following features.
 
 1. **Explore Courses**
     
-    If you view `src/components/Courses.js`,  you'll see that it is rendering some of the courses data from `src/data/courses.json` What you need to do is design a more robust way to display this courses information. You should display all information contained in the JSON — though put some thought into how to go about doing this. For example, you might only want to show the description once the user clicks on the course.
+    If you view `src/components/Courses.tsx`,  you'll see that it is rendering some of the courses data from `src/data/courses.json` What you need to do is design a more robust way to display this courses information. You should display all information contained in the JSON — though put some thought into how to go about doing this. For example, you might only want to show the description once the user clicks on the course.
     
 2. **Search and Filter**
     
@@ -97,7 +95,7 @@ Your application should implement the following features.
     
     These items are totally optional, but a great opportunity to demonstrate your engineering skills!
     
-    - Turn on Typescript’s `strictNullChecks` and `noImplicitAny`
+    - Turn on TypeScript’s `strict` mode
     - Add a [linter](https://eslint.org/)
     - Add unit or integration tests
 
@@ -109,10 +107,13 @@ Your application should implement the following features.
     - CSS modules
     - CSS-in-JS
     - `styled-components`
+    - Tailwind
+    - shadcn/ui
 - For state management, you have several options:
     - Vanilla react state, props and [context managers](https://reactjs.org/docs/context.html)
     - [Redux](https://redux.js.org/)
     - [SWR](https://swr.vercel.app/)
+    - [React Query](https://react-query.tanstack.com/)
 - For navigation:
     - React Router
 
