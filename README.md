@@ -2,7 +2,7 @@
 
 Welcome to the Penn Labs Frontend Challenge!
 
-If you have already done this challenge, there's a [section below](https://pennlabs.notion.site/0d81270614be4947b7a36e2b2195d737?pvs=25#b23b8785be0141fdb97d6c556ec7bea2) for you. 
+If you have already done this challenge, there's a [section below](https://pennlabs.notion.site/0d81270614be4947b7a36e2b2195d737?pvs=25#b23b8785be0141fdb97d6c556ec7bea2) for you.
 
 In this challenge, you will be building a product called Penn Course Cart in React! The goal of this challenge is for you to demonstrate:
 
@@ -15,7 +15,7 @@ More concretely, you will build an interface where users can explore computer sc
 ## Getting Started
 
 1. Copy this [repository](https://github.com/pennlabs/frontend-challenge-f24) to your own GitHub account by clicking the green "use this template" button. You will have to make a Github account if you don't already have one. **Be sure to create a private repository.** **You will be submitting a ZIP file at the end of the technical.**
-2. [Clone](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository) the repository you just made to your own computer. 
+2. [Clone](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository) the repository you just made to your own computer.
 
 ```bash
 git clone https://github.com/pennlabs/frontend-challenge-f24.git
@@ -31,7 +31,7 @@ git clone https://github.com/pennlabs/frontend-challenge-f24.git
 
 ## General Structure
 
-We have provided minimal starter code with the following structure. 
+We have provided minimal starter code with the following structure.
 
 ```
 index.html           Root HTML file for each page
@@ -53,18 +53,19 @@ src/                   Where the JS logic is
 
 ## Features
 
-Your application should implement the following features. 
+Your application should implement the following features.
 
 1. **Explore Courses**
-    
-    If you view `src/components/Courses.tsx`,  you'll see that it is rendering some of the courses data from `src/data/courses.json` What you need to do is design a more robust way to display this courses information. You should display all information contained in the JSON — though put some thought into how to go about doing this. For example, you might only want to show the description once the user clicks on the course.
-    
+
+    If you view `src/components/Courses.tsx`, you'll see that it is rendering some of the courses data from `src/data/courses.json` What you need to do is design a more robust way to display this courses information. You should display all information contained in the JSON — though put some thought into how to go about doing this. For example, you might only want to show the description once the user clicks on the course.
+
 2. **Search and Filter**
-    
+
     At the minimum, the user should be able to:
-    
+
     - Type into a search bar to find courses by title and description
     - Filter courses based on number
+
 3. **Add courses to your cart**
     - A user should be able to add a subset of these courses to their cart. The user should not be able to add more than 7 courses to their cart.
     - When a user adds a course, this addition should be reflected in:
@@ -77,45 +78,48 @@ Your application should implement the following features.
         - If the cart has no items in it, tell the user that their cart is empty.
         - If the cart has courses in it, display the courses and relevant information about them.
 6. **Additional features**
-    
+
     If you finish early, feel free to add an additional feature! Here are some ideas.
+
     - Let users rank courses in order of preference using a drag and drop menu
     - Integrate data from the Penn Courses server
-        - Note that we added the line `"proxy": "[https://penncourseplan.com](https://penncourseplan.com/)"` to `package.json`. This proxy will allow you to make requests to the Penn Courses backend without running into CORS issues.
+
+        - Note that we added the line `"proxy": "https://penncourseplan.com/"` to `package.json` and created a proxy route rewrite in `vite.config.ts`. This proxy will allow you to make requests to the Penn Courses backend without running into CORS issues.
         - The [“Retrieve Course” endpoint](https://penncourseplan.com/api/documentation/#tag/PCx-Course/operation/Retrieve%20Course) should have all the data you need to add information for a specific course, but you are welcome to use any endpoint that doesn’t require authentication.
         - Tip: use semesters from Spring 2022 and earlier - they will have 3-digit course codes that match the `courses.json` data.
         - Example:
-    
+
         ```jsx
-        fetch('/api/base/2022A/courses/CIS-120/')
-          .then(res => res.json())
-          .then(console.log);
+        fetch("/api/base/2022A/courses/CIS-120/")
+            .then((res) => res.json())
+            .then(console.log);
         ```
+
 7. **Code quality**
-    
+
     These items are totally optional, but a great opportunity to demonstrate your engineering skills!
-    
+
     - Turn on TypeScript’s `strict` mode
     - Add a [linter](https://eslint.org/)
     - Add unit or integration tests
 
 ## Additional Tips
 
-- For styling, use whatever you want:
-    - CSS frameworks (Bulma, Bootstrap)
-    - CSS files (or SCSS)
-    - CSS modules
-    - CSS-in-JS
-    - `styled-components`
-    - Tailwind
-    - shadcn/ui
-- For state management, you have several options:
-    - Vanilla react state, props and [context managers](https://reactjs.org/docs/context.html)
-    - [Redux](https://redux.js.org/)
-    - [SWR](https://swr.vercel.app/)
-    - [React Query](https://react-query.tanstack.com/)
-- For navigation:
-    - React Router
+-   For styling, use whatever you want:
+    -   CSS frameworks (Bulma, Bootstrap)
+    -   CSS files (or SCSS)
+    -   CSS modules
+    -   CSS-in-JS
+    -   `styled-components`
+    -   Tailwind
+    -   shadcn/ui
+-   For state management, you have several options:
+    -   Vanilla react state, props and [context managers](https://reactjs.org/docs/context.html)
+    -   [Redux](https://redux.js.org/)
+    -   [SWR](https://swr.vercel.app/)
+    -   [React Query](https://react-query.tanstack.com/)
+-   For navigation:
+    -   React Router
 
 ### **Getting help**
 
